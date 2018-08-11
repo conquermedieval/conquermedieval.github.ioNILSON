@@ -6,7 +6,6 @@ icon: search
 type: page
 ---
 
-   <html lang="pt-BR">         <!-- Página para pt_BR -->
 <div class="page clearfix">
     <div class="left">
        <h1>{{page.title}}</h1>
@@ -24,11 +23,12 @@ type: page
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/js/search.js',
+  json: '/search.json',
 })
 </script>
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <html lang="pt-BR">
 
             </div>
 
