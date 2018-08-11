@@ -1,0 +1,49 @@
+---
+layout: default
+title: Pesquisar
+permalink: /pesquisar/
+icon: search
+type: page
+---
+
+   <html lang="pt-BR">         <!-- Página para pt_BR -->
+<div class="page clearfix">
+    <div class="left">
+       <h1>{{page.title}}</h1>
+        <h1>Faça sua pesquisa aqui em nosso blog.</h1>
+        <small>Nilsonlinux blog project</small>
+        <hr>
+
+<center><div id="search-container">
+<input type="search" class="row" id="search-input" placeholder="FAÇA SUA BUSCA AQUI" /></center>
+<ul id="results-container"></ul>
+</div>
+
+<script src="/js/search-script.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/js/search.js',
+})
+</script>
+</div>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+
